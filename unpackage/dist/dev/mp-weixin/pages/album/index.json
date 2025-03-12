@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "相册",
+  "enablePullDownRefresh": true,
+  "onReachBottomDistance": 50,
+  "usingComponents": {
+    "album-toolbar": "./components/AlbumToolbar",
+    "date-group": "./components/DateGroup",
+    "empty-state": "./components/EmptyState",
+    "loading-state": "./components/LoadingState",
+    "photo-preview": "./components/PhotoPreview"
+  }
+}

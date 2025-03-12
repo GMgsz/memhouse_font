@@ -1,0 +1,123 @@
+
+.home-page {
+	min-height: 100vh;
+	background-color: #FFFFFF;
+	padding: 32px 16px;
+	position: relative;
+	overflow: hidden;
+}
+  
+  /* 顶部标题样式 */
+.header {
+	margin-bottom: 48px;
+	padding: 0 8px;
+}
+.title {
+	font-size: 28px;
+	color: #333333;
+	font-weight: 600;
+	margin-bottom: 8px;
+	display: block;
+}
+.subtitle {
+	font-size: 14px;
+	color: #666666;
+	display: block;
+}
+  
+  /* 模块卡片网格 */
+.module-grid {
+	display: flex;
+	flex-direction: column;
+	gap: 16px;
+}
+  
+  /* 模块卡片样式 */
+.module-card {
+	background-color: #FFFFFF;
+	border-radius: 16px;
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+	transition: all 0.3s ease;
+}
+.module-card:active {
+	transform: scale(0.98);
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+.card-content {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+}
+  
+  /* 图标样式 */
+.icon-wrapper {
+	width: 48px;
+	height: 48px;
+	border-radius: 12px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.icon-wrapper .fa {
+	font-size: 24px;
+	color: #FFFFFF;
+}
+  
+  /* 不同模块的图标背景色 */
+.photo-bg {
+	background: linear-gradient(135deg, #FED31B, #FF9F1C);
+}
+.message-bg {
+	background: linear-gradient(135deg, #4CAF50, #8BC34A);
+}
+.control-bg {
+	background: linear-gradient(135deg, #2196F3, #03A9F4);
+}
+  
+  /* 卡片信息样式 */
+.card-info {
+	display: flex;
+	flex-direction: column;
+	gap: 4px;
+}
+.card-title {
+	font-size: 17px;
+	color: #333333;
+	font-weight: 500;
+}
+.card-desc {
+	font-size: 12px;
+	color: #999999;
+}
+  
+  /* 卡片箭头样式 */
+.card-footer .fa {
+	font-size: 20px;
+	color: #CCCCCC;
+}
+  
+  /* 底部装饰 */
+.decoration {
+	position: absolute;
+	bottom: -100px;
+	right: -50px;
+	z-index: -1;
+}
+.deco-circle {
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	background: linear-gradient(135deg, rgba(254, 211, 27, 0.1), rgba(254, 211, 27, 0.05));
+	position: absolute;
+}
+.deco-circle:nth-child(1) {
+	transform: translate(-30px, -30px);
+}
+.deco-circle:nth-child(2) {
+	transform: scale(0.8);
+}
+  

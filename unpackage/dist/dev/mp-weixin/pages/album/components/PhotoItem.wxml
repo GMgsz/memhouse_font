@@ -1,0 +1,1 @@
+<view class="photo-item" bindtap="{{f}}" bindlongpress="{{g}}"><image class="photo-image" src="{{a}}" mode="aspectFill" lazy-load="{{true}}"/><view wx:if="{{b}}" class="{{['select-indicator', d && 'selected']}}"><text wx:if="{{c}}" class="fa fa-check"></text></view><view class="photo-info"><text class="photo-size">{{e}}</text></view></view>

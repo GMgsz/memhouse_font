@@ -1,0 +1,175 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://cdn.staticfile.org/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'),
+       url('https://cdn.staticfile.org/font-awesome/4.7.0/fonts/fontawesome-webfont.woff') format('woff'),
+       url('https://cdn.staticfile.org/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 添加图标 */
+.fa-plus:before {
+  content: "\f067";
+}
+
+.fa-check-square-o:before {
+  content: "\f046";
+}
+
+.fa-download:before {
+  content: "\f019";
+}
+
+.fa-share-alt:before {
+  content: "\f1e0";
+}
+
+.fa-trash:before {
+  content: "\f1f8";
+}
+
+.fa-image:before {
+  content: "\f03e";
+}
+
+.fa-calendar:before {
+  content: "\f073";
+}
+
+.fa-check:before {
+  content: "\f00c";
+}
+
+.fa-spinner:before {
+  content: "\f110";
+}
+
+/* 编辑页面需要的图标 */
+.fa-play:before {
+  content: "\f04b";
+}
+
+.fa-pause:before {
+  content: "\f04c";
+}
+
+.fa-magic:before {
+  content: "\f0d0";
+}
+
+.fa-heart:before {
+  content: "\f004";
+}
+
+.fa-arrows-v:before {
+  content: "\f07d";
+}
+
+.fa-ellipsis:before {
+  content: "\f141";
+}
+
+.fa-sun-o:before {
+  content: "\f185";
+}
+
+.fa-smile-o:before {
+  content: "\f118";
+}
+
+.fa-book:before {
+  content: "\f02d";
+}
+
+.fa-feather:before {
+  content: "\f1fb";
+}
+
+.fa-moon-o:before {
+  content: "\f186";
+}
+
+.fa-fire:before {
+  content: "\f06d";
+}
+
+.fa-university:before {
+  content: "\f19c";
+}
+
+.fa-compress:before {
+  content: "\f066";
+}
+
+.fa-expand:before {
+  content: "\f065";
+}
+
+.fa-xmark:before {
+  content: "\f00d";
+}
+
+.fa-spin {
+  animation: fa-spin 2s infinite linear;
+}
+
+@keyframes fa-spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(359deg);
+  }
+}
+
+/* 消息预览页需要的图标 */
+.fa-microphone:before {
+  content: "\f130";
+}
+
+.fa-microphone-alt:before {
+  content: "\f130";
+}
+
+.fa-file-text:before {
+  content: "\f15c";
+}
+
+.fa-edit:before {
+  content: "\f044";
+}
+
+/* 音量控制图标 */
+.fa-volume-up:before {
+  content: "\f028";
+}
+
+.fa-volume-down:before {
+  content: "\f027";
+}
+
+.fa-volume-off:before {
+  content: "\f026";
+}
+
+/* 主页需要的图标 */
+.fa-comments:before {
+  content: "\f086";
+}
+
+.fa-sliders:before {
+  content: "\f1de";
+}
+
+.fa-angle-right:before {
+  content: "\f105";
+} 

@@ -1,0 +1,28 @@
+
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 0;
+}
+.empty-icon-wrapper {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  background-color: #F0F0F0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+.empty-icon-wrapper .fa {
+  font-size: 40px;
+  color: #CCCCCC;
+}
+.empty-text {
+  font-size: 15px;
+  color: #999999;
+  text-align: center;
+  line-height: 1.5;
+}

@@ -1,0 +1,325 @@
+
+	/* 引入FontAwesome */
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('https://cdn.staticfile.org/font-awesome/4.7.0/fonts/fontawesome-webfont.woff2') format('woff2'),
+       url('https://cdn.staticfile.org/font-awesome/4.7.0/fonts/fontawesome-webfont.woff') format('woff'),
+       url('https://cdn.staticfile.org/font-awesome/4.7.0/fonts/fontawesome-webfont.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+	/* 添加图标 */
+.fa-plus:before {
+  content: "\f067";
+}
+.fa-check-square-o:before {
+  content: "\f046";
+}
+.fa-download:before {
+  content: "\f019";
+}
+.fa-share-alt:before {
+  content: "\f1e0";
+}
+.fa-trash:before {
+  content: "\f1f8";
+}
+.fa-image:before {
+  content: "\f03e";
+}
+.fa-calendar:before {
+  content: "\f073";
+}
+.fa-check:before {
+  content: "\f00c";
+}
+.fa-spinner:before {
+  content: "\f110";
+}
+	/* 编辑页面需要的图标 */
+.fa-play:before {
+  content: "\f04b";
+}
+.fa-pause:before {
+  content: "\f04c";
+}
+.fa-magic:before {
+  content: "\f0d0";
+}
+.fa-heart:before {
+  content: "\f004";
+}
+.fa-arrows-v:before {
+  content: "\f07d";
+}
+.fa-ellipsis:before {
+  content: "\f141";
+}
+.fa-sun-o:before {
+  content: "\f185";
+}
+.fa-smile-o:before {
+  content: "\f118";
+}
+.fa-book:before {
+  content: "\f02d";
+}
+.fa-feather:before {
+  content: "\f1fb";
+}
+.fa-moon-o:before {
+  content: "\f186";
+}
+.fa-fire:before {
+  content: "\f06d";
+}
+.fa-university:before {
+  content: "\f19c";
+}
+.fa-compress:before {
+  content: "\f066";
+}
+.fa-expand:before {
+  content: "\f065";
+}
+.fa-xmark:before {
+  content: "\f00d";
+}
+.fa-spin {
+  animation: fa-spin 2s infinite linear;
+}
+@keyframes fa-spin {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(359deg);
+}
+}
+	/* 消息预览页需要的图标 */
+.fa-microphone:before {
+  content: "\f130";
+}
+.fa-microphone-alt:before {
+  content: "\f130";
+}
+.fa-file-text:before {
+  content: "\f15c";
+}
+.fa-edit:before {
+  content: "\f044";
+}
+	/* 音量控制图标 */
+.fa-volume-up:before {
+  content: "\f028";
+}
+.fa-volume-down:before {
+  content: "\f027";
+}
+.fa-volume-off:before {
+  content: "\f026";
+}
+	/* 主页需要的图标 */
+.fa-comments:before {
+  content: "\f086";
+}
+.fa-sliders:before {
+  content: "\f1de";
+}
+.fa-angle-right:before {
+  content: "\f105";
+}
+	/* 全局样式 */
+page {
+		font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+		color: #333333;
+		background-color: #F7F7F7;
+}
+	/* 品牌色系 */
+.brand-primary {
+		color: #FED31B;
+}
+.bg-brand-primary {
+		background-color: #FED31B;
+}
+	/* 文字色系 */
+.text-primary {
+		color: #333333;
+}
+.text-secondary {
+		color: #666666;
+}
+.text-tertiary {
+		color: #999999;
+}
+	/* 功能色 */
+.text-success {
+		color: #FED31B;
+}
+.text-warning {
+		color: #ADFF2F;
+}
+.text-error {
+		color: #FA5151;
+}
+.bg-success {
+		background-color: #FED31B;
+}
+.bg-warning {
+		background-color: #ADFF2F;
+}
+.bg-error {
+		background-color: #FA5151;
+}
+	/* TailwindCSS 核心样式 */
+.flex { display: flex;
+}
+.flex-col { flex-direction: column;
+}
+.items-center { align-items: center;
+}
+.justify-center { justify-content: center;
+}
+.justify-between { justify-content: space-between;
+}
+.justify-around { justify-content: space-around;
+}
+.flex-wrap { flex-wrap: wrap;
+}
+.flex-1 { flex: 1;
+}
+.text-xs { font-size: 12px;
+}
+.text-sm { font-size: 14px;
+}
+.text-base { font-size: 16px;
+}
+.text-lg { font-size: 18px;
+}
+.text-xl { font-size: 20px;
+}
+.font-bold { font-weight: bold;
+}
+.text-gray-400 { color: #999999;
+}
+.text-gray-600 { color: #666666;
+}
+.text-gray-800 { color: #333333;
+}
+.text-white { color: #FFFFFF;
+}
+.text-red { color: #FA5151;
+}
+.bg-white { background-color: #FFFFFF;
+}
+.bg-gray-100 { background-color: #F7F7F7;
+}
+.bg-primary { background-color: #FED31B;
+}
+.bg-red { background-color: #FA5151;
+}
+.rounded-full { border-radius: 9999px;
+}
+.rounded-lg { border-radius: 8px;
+}
+.rounded-md { border-radius: 6px;
+}
+.rounded-sm { border-radius: 4px;
+}
+.p-1 { padding: 4px;
+}
+.p-2 { padding: 8px;
+}
+.p-3 { padding: 12px;
+}
+.p-4 { padding: 16px;
+}
+.px-2 { padding-left: 8px; padding-right: 8px;
+}
+.py-1 { padding-top: 4px; padding-bottom: 4px;
+}
+.py-2 { padding-top: 8px; padding-bottom: 8px;
+}
+.m-1 { margin: 4px;
+}
+.m-2 { margin: 8px;
+}
+.mx-1 { margin-left: 4px; margin-right: 4px;
+}
+.mx-2 { margin-left: 8px; margin-right: 8px;
+}
+.my-1 { margin-top: 4px; margin-bottom: 4px;
+}
+.my-2 { margin-top: 8px; margin-bottom: 8px;
+}
+.mb-1 { margin-bottom: 4px;
+}
+.mb-2 { margin-bottom: 8px;
+}
+.mb-4 { margin-bottom: 16px;
+}
+.mt-1 { margin-top: 4px;
+}
+.mt-2 { margin-top: 8px;
+}
+.shadow-sm { box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+.shadow { box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+}
+.shadow-md { box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+.w-full { width: 100%;
+}
+.h-full { height: 100%;
+}
+.h-screen { height: 100vh;
+}
+.relative { position: relative;
+}
+.absolute { position: absolute;
+}
+.fixed { position: fixed;
+}
+.sticky { position: -webkit-sticky; position: sticky;
+}
+.top-0 { top: 0;
+}
+.right-0 { right: 0;
+}
+.bottom-0 { bottom: 0;
+}
+.left-0 { left: 0;
+}
+.z-10 { z-index: 10;
+}
+.z-20 { z-index: 20;
+}
+.z-50 { z-index: 50;
+}
+.z-100 { z-index: 100;
+}
+.opacity-0 { opacity: 0;
+}
+.opacity-50 { opacity: 0.5;
+}
+.opacity-100 { opacity: 1;
+}
+.transition { transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+}
+.duration-200 { transition-duration: 200ms;
+}
+.ease-in-out { transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+	/* 自定义样式 */
+.safe-area-bottom {
+		padding-bottom: env(safe-area-inset-bottom);
+}
+page{--status-bar-height:25px;--top-window-height:0px;--window-top:0px;--window-bottom:0px;--window-left:0px;--window-right:0px;--window-magin:0px}[data-c-h="true"]{display: none !important;}

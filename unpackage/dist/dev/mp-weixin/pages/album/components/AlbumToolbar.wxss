@@ -1,0 +1,67 @@
+
+/* 底部工具栏 */
+.toolbar {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background-color: #F7F7F7;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: env(safe-area-inset-bottom);
+  z-index: 100;
+}
+.toolbar-btn {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+  transition: opacity 0.2s ease;
+}
+.toolbar-btn:active {
+  opacity: 0.7;
+}
+.icon-wrapper {
+  width: auto;
+  height: auto;
+  margin-right: 4px;
+  display: flex;
+  align-items: center;
+}
+.icon-wrapper .fa {
+  font-size: 20px;
+  color: #576B95;
+}
+.toolbar-text {
+  font-size: 17px;
+  color: #576B95;
+  font-weight: normal;
+}
+
+/* 选择模式下的按钮样式 */
+.delete-icon .fa {
+  color: #FF5A5F;
+}
+.cancel-text {
+  font-size: 17px;
+  color: #576B95;
+  font-weight: normal;
+}
+
+/* 已选照片数量提示 */
+.selected-count-badge {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.8);
+  padding: 6px 16px;
+  border-radius: 16px;
+  z-index: 101;
+}
+.selected-count-text {
+  font-size: 15px;
+  color: #FFFFFF;
+  font-weight: normal;
+}

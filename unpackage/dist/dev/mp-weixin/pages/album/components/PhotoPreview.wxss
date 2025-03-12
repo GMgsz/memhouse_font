@@ -1,0 +1,91 @@
+
+.preview-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #000000;
+  z-index: 1000;
+  display: flex;
+  flex-direction: column;
+}
+
+/* 照片预览容器 */
+.preview-image-container {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+.preview-image {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.1s ease;
+}
+
+/* 查看原图按钮 */
+.view-original-btn {
+  position: absolute;
+  bottom: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.view-original-btn:active {
+  opacity: 0.8;
+}
+.view-original-btn .fa {
+  margin-right: 6px;
+  color: #FFFFFF;
+  font-size: 14px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+0% { transform: rotate(0deg);
+}
+100% { transform: rotate(360deg);
+}
+}
+.view-original-text {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: normal;
+}
+
+/* 底部工具栏 */
+.preview-toolbar {
+  height: 50px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: env(safe-area-inset-bottom);
+  background-color: #000000;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.preview-tool-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+}
+.preview-tool-btn .fa {
+  font-size: 20px;
+  color: #FFFFFF;
+  margin-bottom: 4px;
+}
+.preview-tool-text {
+  font-size: 12px;
+  color: #FFFFFF;
+}

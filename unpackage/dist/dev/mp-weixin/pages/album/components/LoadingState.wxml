@@ -1,0 +1,1 @@
+<view><view wx:if="{{a}}" class="loading-more"><text class="fa fa-spinner fa-spin loading-icon"></text><text class="loading-text">加载中...</text></view><view wx:if="{{b}}" class="no-more"><text class="no-more-text">没有更多照片了</text></view></view>

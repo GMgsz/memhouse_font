@@ -1,0 +1,40 @@
+
+/* 加载状态 */
+.loading-more,
+.no-more {
+  text-align: center;
+  padding: 16px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.loading-icon {
+  font-size: 24px;
+  color: #FED31B;
+  margin-bottom: 8px;
+}
+.loading-text,
+.no-more-text {
+  font-size: 14px;
+  color: #999999;
+}
+.no-more {
+  position: relative;
+  padding: 20px 0;
+}
+.no-more:before,
+.no-more:after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: 20%;
+  height: 1px;
+  background-color: #EEEEEE;
+}
+.no-more:before {
+  left: 20%;
+}
+.no-more:after {
+  right: 20%;
+}

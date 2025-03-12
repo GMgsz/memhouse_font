@@ -1,0 +1,28 @@
+
+/* 主容器 */
+.album-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+}
+.album-content {
+  flex: 1;
+  padding: 0;
+  padding-bottom: calc(50px + env(safe-area-inset-bottom)); /* 为底部工具栏留出空间 */
+  background-color: #FFFFFF;
+}
+
+/* 过渡动画 */
+.fade-enter-active, .fade-leave-active {
+  transition: opacity 0.2s ease;
+}
+.fade-enter-from, .fade-leave-to {
+  opacity: 0;
+}
+
+/* 滚动效果 */
+page {
+  -webkit-overflow-scrolling: touch;
+  background-color: #FFFFFF;
+}

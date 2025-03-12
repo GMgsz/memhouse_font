@@ -1,0 +1,47 @@
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('~@fortawesome/fontawesome-free/webfonts/fa-solid-900.ttf') format('truetype');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'FontAwesome';
+  src: url('~@fortawesome/fontawesome-free/webfonts/fa-regular-400.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+.fa {
+  font-family: 'FontAwesome';
+  font-weight: 900;
+  font-style: normal;
+  font-size: inherit;
+  display: inline-block;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: auto;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* 图标Unicode映射 */
+.fa-play:before { content: '\f04b'; }
+.fa-pause:before { content: '\f04c'; }
+.fa-xmark:before { content: '\f00d'; }
+.fa-wand-magic:before { content: '\f0d0'; }
+.fa-heart:before { content: '\f004'; }
+.fa-arrows-up-down:before { content: '\f07d'; }
+.fa-ellipsis:before { content: '\f141'; }
+.fa-floppy-disk:before { content: '\f0c7'; }
+.fa-copy:before { content: '\f0c5'; }
+.fa-share:before { content: '\f064'; }
+.fa-check:before { content: '\f00c'; }
+.fa-sun:before { content: '\f185'; }
+.fa-face-smile:before { content: '\f118'; }
+.fa-book:before { content: '\f02d'; }
+.fa-feather:before { content: '\f52d'; }
+.fa-moon:before { content: '\f186'; }
+.fa-fire:before { content: '\f06d'; }
+.fa-landmark:before { content: '\f66f'; }
+.fa-compress:before { content: '\f066'; }
+.fa-equals:before { content: '\f52c'; }
+.fa-expand:before { content: '\f065'; } 

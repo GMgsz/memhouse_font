@@ -1,0 +1,59 @@
+{
+	"pages": [ 
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path": "pages/devicecontrol/index",
+			"style": {
+				"navigationBarTitleText": "设备控制",
+				"enablePullDownRefresh": true
+			}
+		},	
+		{
+			"path": "pages/message/index",
+			"style": {
+				"navigationBarTitleText": "设备消息",
+				"enablePullDownRefresh": true
+			}
+		},	
+		{
+			"path": "pages/album/index",
+			"style": {
+				"navigationBarTitleText": "相册",
+				"enablePullDownRefresh": true,
+				"onReachBottomDistance": 50,
+				"app-plus": {
+					"bounce": "none",
+					"titleNView": {
+						"buttons": [
+							{
+								"text": "首页",
+								"float": "left",
+								"fontSize": "14px"
+							}
+						]
+					}
+				}
+			}
+		},
+		
+		
+		{
+			"path": "pages/message/edit",
+			"style": {
+				"navigationBarTitleText": "消息编辑"
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "MemHouse",
+		"navigationBarBackgroundColor": "#FFFFFF",
+		"backgroundColor": "#F7F7F7"
+	},
+	"uniIdRouter": {}
+}
